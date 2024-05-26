@@ -112,11 +112,12 @@ End Function
 ''' PC名から、対応するセル名を返す
 ''' </summary>
 Public Function GetCellNameFromPCName(pc_name As String) As String
+    Dim cell_name As String
 
     ' アンスコ化
-    pc_name = Replace(pc_name, "-", "_")
+    cell_name = Replace(pc_name, "-", "_")
     
-    GetCellNameFromPCName = pc_name
+    GetCellNameFromPCName = cell_name
     
 End Function
 
